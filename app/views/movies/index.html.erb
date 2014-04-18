@@ -1,0 +1,10 @@
+<h1> Movies 123 </h1>
+
+
+
+<ul>
+  <% all_movies = Movie.read %>
+  <% all_movies.each do |movie| %>
+    <li><%= movie["title"] %> (<%= movie["year"] %>)</li>
+  <% end %>
+</ul>
